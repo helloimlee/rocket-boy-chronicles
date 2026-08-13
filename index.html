@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Chronicles of the Rug-Bound Rocket Boy</title>
+<meta name="description" content="A domestic expedition in four acts, photographed entirely on a toy camera. Narrated. 58 photographs. One roadster, briefly tasted.">
+<meta property="og:title" content="The Chronicles of the Rug-Bound Rocket Boy">
+<meta property="og:description" content="A domestic expedition in four acts, photographed entirely on a toy camera.">
+<meta property="og:image" content="PICT0003.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F4E9D8'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%2333291F' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Futura,sans-serif' font-size='26' font-weight='bold' text-anchor='middle' fill='%23AE4A2E'%3ERB%3C/text%3E%3C/svg%3E">
+<style>
+:root{--cream:#F4E9D8;--ink:#33291F;--brick:#AE4A2E;--mustard:#D9A13B;--teal:#46766F;--pink:#E9BBA4;
+--serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+--sans:Futura,'Futura PT','Avenir Next',Avenir,'Century Gothic','Gill Sans','Trebuchet MS',sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html,body{height:100%;background:#1c1713;overflow:hidden;font-family:var(--sans)}
+#stage{position:fixed;inset:0}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .7s ease;pointer-events:none;overflow:hidden}
+.slide.active{opacity:1;pointer-events:auto}
+.slide img.ph{position:absolute;left:50%;top:50%;width:104%;height:104%;object-fit:cover;transform:translate(-50%,-50%)}
+.kb1 img.ph{animation:kb1 var(--kb,10s) ease-in-out both}
+.kb2 img.ph{animation:kb2 var(--kb,10s) ease-in-out both}
+.kb3 img.ph{animation:kb3 var(--kb,10s) ease-in-out both}
+.kb4 img.ph{animation:kb4 var(--kb,10s) ease-in-out both}
+.paused img.ph{animation-play-state:paused}
+@keyframes kb1{from{transform:translate(-50%,-50%) scale(1)}to{transform:translate(-50%,-50%) scale(1.09)}}
+@keyframes kb2{from{transform:translate(-50%,-50%) scale(1.09)}to{transform:translate(-50%,-50%) scale(1)}}
+@keyframes kb3{from{transform:translate(-51.5%,-50%) scale(1.06)}to{transform:translate(-48.5%,-50%) scale(1.06)}}
+@keyframes kb4{from{transform:translate(-48.5%,-50%) scale(1.06)}to{transform:translate(-51.5%,-50%) scale(1.06)}}
+@media (prefers-reduced-motion:reduce){.slide img.ph{animation:none !important}}
+.vig::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 55%,rgba(28,23,19,.42) 100%)}
+.card{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;text-align:center}
+.frame{position:absolute;inset:26px;border:3px solid var(--ink);outline:1px solid var(--ink);outline-offset:6px}
+.cover-bg{background:var(--cream)}
+.kicker{font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--brick)}
+h1{font-size:clamp(30px,5.2vw,64px);line-height:1.12;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);max-width:16ch;margin:22px auto}
+.orn{color:var(--mustard);font-size:22px;letter-spacing:.6em;margin:6px 0 2px}
+.sub{font-size:14px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink)}
+.sub2{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--teal);margin-top:14px}
+.btn{margin-top:34px;display:inline-block;font-family:var(--sans);font-size:13px;letter-spacing:.34em;text-transform:uppercase;
+color:var(--cream);background:var(--brick);border:2px solid var(--ink);padding:15px 34px 13px;cursor:pointer;box-shadow:5px 5px 0 var(--ink)}
+.btn:hover{background:var(--ink)}
+.actcard .frame{border-color:rgba(51,41,31,.85);outline-color:rgba(51,41,31,.85)}
+.actlabel{font-size:15px;letter-spacing:.5em;text-transform:uppercase;color:var(--ink)}
+.acttitle{font-size:clamp(24px,3.6vw,44px);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);max-width:22ch;margin:18px auto 0}
+.lower{position:absolute;left:50%;bottom:6.5%;transform:translateX(-50%);width:min(740px,86vw);
+background:var(--cream);border:2px solid var(--ink);box-shadow:6px 6px 0 rgba(51,41,31,.55);padding:20px 30px 22px;text-align:center}
+.lower .scen{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--brick)}
+.lower .stt{font-size:17px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);margin:7px 0 10px}
+.lower .txt{font-family:var(--serif);font-style:italic;font-size:15.5px;line-height:1.55;color:var(--ink)}
+.chip{position:absolute;left:50%;bottom:5.5%;transform:translateX(-50%);max-width:86vw;background:var(--cream);
+border:1.5px solid var(--ink);box-shadow:4px 4px 0 rgba(51,41,31,.5);padding:9px 20px 8px;
+font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#hud{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:0;transition:opacity .5s}
+#hud.on{opacity:1}
+#bar{position:fixed;top:0;left:0;height:4px;background:var(--mustard);width:0%;transition:width .4s linear}
+#actlbl{position:fixed;top:16px;left:20px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--cream);text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#cnt{position:fixed;top:16px;right:20px;font-size:10px;letter-spacing:.3em;color:var(--cream);text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#ctl{position:fixed;bottom:14px;right:16px;display:flex;gap:8px;pointer-events:auto}
+.cbtn{font-family:var(--sans);font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);
+background:var(--cream);border:1.5px solid var(--ink);padding:7px 12px 6px;cursor:pointer;box-shadow:3px 3px 0 rgba(51,41,31,.5)}
+.cbtn:hover{background:var(--mustard)}
+#hint{position:fixed;bottom:16px;left:20px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,233,216,.75);text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.endcard{background:var(--ink)}
+.endcard .frame{border-color:var(--cream);outline-color:var(--cream)}
+.fin{font-size:clamp(60px,10vw,120px);letter-spacing:.18em;color:var(--cream);text-transform:uppercase}
+.cred{margin-top:26px;font-family:var(--serif);font-style:italic;font-size:15px;line-height:2;color:var(--pink)}
+.cred b{font-family:var(--sans);font-style:normal;font-size:11px;letter-spacing:.3em;color:var(--mustard);text-transform:uppercase}
+@media (max-width:640px){
+ .frame{inset:12px;border-width:2px;outline-offset:4px}
+ h1{font-size:clamp(26px,7.5vw,44px);letter-spacing:.04em;margin:14px auto}
+ .kicker{font-size:10px;letter-spacing:.28em}
+ .orn{font-size:16px;letter-spacing:.45em}
+ .sub{font-size:11px;letter-spacing:.2em}
+ .sub2{font-size:9px;letter-spacing:.16em;margin-top:10px}
+ .btn{margin-top:24px;font-size:11px;letter-spacing:.22em;padding:12px 22px 10px;box-shadow:4px 4px 0 var(--ink)}
+ .actlabel{font-size:12px;letter-spacing:.32em}
+ .acttitle{font-size:clamp(20px,6vw,32px);letter-spacing:.06em}
+ .lower{width:92vw;padding:12px 14px 13px;bottom:8%}
+ .lower .scen{font-size:9px;letter-spacing:.3em}
+ .lower .stt{font-size:13px;letter-spacing:.16em;margin:5px 0 7px}
+ .lower .txt{font-size:13px;line-height:1.5}
+ .chip{white-space:normal;line-height:1.6;font-size:9.5px;letter-spacing:.16em;max-width:88vw;bottom:15%;padding:7px 12px 6px}
+ #hint{display:none}
+ #ctl{right:10px;bottom:8px;gap:6px}
+ .cbtn{font-size:8px;letter-spacing:.18em;padding:6px 9px 5px;box-shadow:2px 2px 0 rgba(51,41,31,.5)}
+ #actlbl{top:12px;left:14px;max-width:52vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ #cnt{top:12px;right:14px}
+ .fin{font-size:clamp(48px,16vw,80px)}
+ .cred{font-size:12.5px;line-height:1.9}
+ .cred b{font-size:9.5px;letter-spacing:.2em}
+}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="hud"><div id="bar"></div><div id="actlbl"></div><div id="cnt"></div><div id="hint">CLICK SIDES TO NAVIGATE · SPACE TO PAUSE · F FOR FULLSCREEN</div><div id="ctl"><button class="cbtn" id="pz">Pause</button><button class="cbtn" id="mt">Sound Off</button><button class="cbtn" id="fs">Fullscreen</button></div></div>
+<script type="application/json" id="cfg">{"slides":[{"t":"cover","dur":18.4,"nar":0},{"t":"act","act":1,"dur":3.8},{"t":"photo","act":1,"img":"PICT0003.jpg","anchor":true,"scene":"SCENE I","stitle":"The Initial Contact","text":"At precisely 2:14 PM, a highly aerodynamic, scale-model electric vehicle arrived in the lower quadrant of the living room carpet. It was unblemished. It was silent. It was, regrettably, still in the box.","nar":1,"dur":18.7},{"t":"photo","act":1,"img":"PICT0006.jpg","anchor":false,"caption":"FIG. 1 \u00b7 FIRST CONTACT, LOWER CARPET QUADRANT.","dur":3.0},{"t":"photo","act":1,"img":"PICT0032.jpg","anchor":false,"caption":"FIG. 2 \u00b7 THE VEHICLE, PHOTOGRAPHED FOR INSURANCE PURPOSES.","dur":3.0},{"t":"photo","act":1,"img":"PICT0031.jpg","anchor":false,"caption":"FIG. 3 \u00b7 PARALLEL PARKING, UNSUPERVISED.","dur":3.0},{"t":"photo","act":1,"img":"PICT0035.jpg","anchor":true,"scene":"SCENE II","stitle":"The Inspection","text":"The Chief Investigator, aged two, conducted a rigorous manual inspection of the vehicle's composite exterior. His diagnosis: functional. A secondary inspection, by mouth, was narrowly prevented.","nar":2,"dur":16.4},{"t":"photo","act":1,"img":"PICT0030.jpg","anchor":false,"caption":"FIG. 4 \u00b7 THE INVESTIGATOR CONSIDERS THE ACQUISITION.","dur":3.0},{"t":"photo","act":1,"img":"PICT0034.jpg","anchor":false,"caption":"FIG. 5 \u00b7 BACKUP IS REQUESTED, EMPHATICALLY.","dur":3.0},{"t":"photo","act":1,"img":"PICT0028.jpg","anchor":false,"caption":"FIG. 6 \u00b7 CONSULTATION WITH SENIOR MANAGEMENT.","dur":3.0},{"t":"photo","act":1,"img":"PICT0029.jpg","anchor":false,"caption":"FIG. 7 \u00b7 MANAGEMENT APPROVES, CONDITIONALLY.","dur":3.0},{"t":"photo","act":1,"img":"PICT0036.jpg","anchor":true,"scene":"SCENE III","stitle":"The Mechanical Assessment","text":"Protocol required a thorough examination of the drivetrain. The vehicle was inverted without its consent. No structural anomalies were recorded. The wheels, when spun, remained wheels.","nar":3,"dur":14.6},{"t":"photo","act":1,"img":"PICT0009.jpg","anchor":false,"caption":"FIG. 8 \u00b7 OVERNIGHT STORAGE, NORTHEAST CORNER.","dur":3.0},{"t":"act","act":2,"dur":3.8},{"t":"photo","act":2,"img":"PICT0033.jpg","anchor":true,"scene":"SCENE IV","stitle":"The Auxiliary Fleet Allocation","text":"To support the mission, an auxiliary logistics fleet of heavily modified plastic trucks was summoned from the toy chest repository. Several arrived upside down. Morale remained high.","nar":4,"dur":15.0},{"t":"photo","act":2,"img":"PICT0046.jpg","anchor":false,"caption":"FIG. 9 \u00b7 FLEET INTAKE, ONE UNIT AT A TIME.","dur":3.0},{"t":"photo","act":2,"img":"PICT0045.jpg","anchor":false,"caption":"FIG. 10 \u00b7 THE STAGING GROUND, MID-OPERATION.","dur":3.0},{"t":"photo","act":2,"img":"PICT0048.jpg","anchor":true,"scene":"SCENE V","stitle":"The Specialized Transport Audit","text":"Every asset was scrutinized. The heavy-utility vehicle was selected for off-carpet terrain capability, pending a full audit of its tires. The audit took most of the afternoon. The tires passed.","nar":5,"dur":15.5},{"t":"photo","act":2,"img":"PICT0047.jpg","anchor":false,"caption":"FIG. 11 \u00b7 THE AUDIT CONTINUES.","dur":3.0},{"t":"photo","act":2,"img":"PICT0049.jpg","anchor":false,"caption":"FIG. 12 \u00b7 THE AUDITOR, BRIEFLY AT REST.","dur":3.0},{"t":"photo","act":2,"img":"PICT0050.jpg","anchor":false,"caption":"FIG. 13 \u00b7 A FLOOR-LEVEL INSPECTION, CONDUCTED FACE FIRST.","dur":3.0},{"t":"photo","act":2,"img":"PICT0051.jpg","anchor":false,"caption":"FIG. 14 \u00b7 THE INSPECTION, ONGOING.","dur":3.0},{"t":"photo","act":2,"img":"PICT0012.jpg","anchor":true,"scene":"SCENE VI","stitle":"The Sentries","text":"The security detail, a local canine specialist in a floral neckerchief, observed the preparations with stoic neutrality. She had seen all of this before. She would see all of it again.","nar":6,"dur":14.3},{"t":"photo","act":2,"img":"PICT0014.jpg","anchor":false,"caption":"FIG. 15 \u00b7 PERIMETER PATROL, SOUTH LAWN.","dur":3.0},{"t":"photo","act":2,"img":"PICT0041.jpg","anchor":false,"caption":"FIG. 16 \u00b7 THE SPECIALIST DECLINES TO COMMENT.","dur":3.0},{"t":"photo","act":2,"img":"PICT0040.jpg","anchor":false,"caption":"FIG. 17 \u00b7 CREDENTIALS, PRESENTED ON REQUEST.","dur":3.0},{"t":"photo","act":2,"img":"PICT0013.jpg","anchor":false,"caption":"FIG. 18 \u00b7 THE SPECIALIST INSPECTS THE RECORDING DEVICE.","dur":3.0},{"t":"photo","act":2,"img":"PICT0026.jpg","anchor":false,"caption":"FIG. 19 \u00b7 AUXILIARY PLUSH PERSONNEL, RED SCARF DIVISION.","dur":3.0},{"t":"photo","act":2,"img":"PICT0025.jpg","anchor":false,"caption":"FIG. 20 \u00b7 THE SAME PERSONNEL, EVADING THE PRESS.","dur":3.0},{"t":"act","act":3,"dur":3.8},{"t":"photo","act":3,"img":"PICT0019.jpg","anchor":true,"scene":"SCENE VII","stitle":"High-Velocity Maneuvers","text":"The expedition commenced at a brisk, tactical crawl. Top speeds were achieved. Several corners were survived. The destination: the dining room baseboard, by way of everywhere else.","nar":7,"dur":15.5},{"t":"photo","act":3,"img":"PICT0052.jpg","anchor":false,"caption":"FIG. 21 \u00b7 THE INVESTIGATOR, AT CRUISING SPEED.","dur":3.0},{"t":"photo","act":3,"img":"PICT0008.jpg","anchor":false,"caption":"FIG. 22 \u00b7 A FIELD OFFICER HOLDS THE CORRIDOR.","dur":3.0},{"t":"photo","act":3,"img":"PICT0007.jpg","anchor":false,"caption":"FIG. 23 \u00b7 COMMAND SURVEYS THE ROUTE.","dur":3.0},{"t":"photo","act":3,"img":"PICT0058.jpg","anchor":true,"scene":"SCENE VIII","stitle":"The Domestic Obstacle","text":"A brief detour was required when the Chief Investigator engaged in a mandatory, highly confidential hiding sequence behind the drapery. His location was known to everyone in the building. Nobody said a word.","nar":8,"dur":17.8},{"t":"photo","act":3,"img":"PICT0059.jpg","anchor":false,"caption":"FIG. 24 \u00b7 THE INVESTIGATOR, DISCOVERED ON SCHEDULE.","dur":3.0},{"t":"photo","act":3,"img":"PICT0060.jpg","anchor":false,"caption":"FIG. 25 \u00b7 THE DEBRIEF, OUT OF FOCUS.","dur":3.0},{"t":"photo","act":3,"img":"PICT0010.jpg","anchor":true,"scene":"SCENE IX","stitle":"The Basecamp Summit","text":"By mid-afternoon, the transport had successfully climbed the sofa summit, overlooking the entire northern territory of the parlor. A flag was not planted. The moment was understood.","nar":9,"dur":16.0},{"t":"act","act":4,"dur":3.8},{"t":"photo","act":4,"img":"PICT0024.jpg","anchor":true,"scene":"SCENE X","stitle":"The Extended Committee","text":"The steering committee convened in the kitchen gallery to formalize the afternoon's itinerary, and to pass down operational command. Minutes were not taken. Snacks were.","nar":10,"dur":13.1},{"t":"photo","act":4,"img":"PICT0016.jpg","anchor":false,"caption":"FIG. 26 \u00b7 OPERATIONAL COMMAND CHANGES HANDS.","dur":3.0},{"t":"photo","act":4,"img":"PICT0017.jpg","anchor":false,"caption":"FIG. 27 \u00b7 THE HANDOVER, DOCUMENTED TWICE FOR ACCURACY.","dur":3.0},{"t":"photo","act":4,"img":"PICT0018.jpg","anchor":false,"caption":"FIG. 28 \u00b7 THE REMOTE IS STUDIED AT LENGTH.","dur":3.0},{"t":"photo","act":4,"img":"PICT0020.jpg","anchor":false,"caption":"FIG. 29 \u00b7 THE EAST CORRIDOR, SECURED.","dur":3.0},{"t":"photo","act":4,"img":"PICT0021.jpg","anchor":false,"caption":"FIG. 30 \u00b7 THE EAST CORRIDOR, SECURED AGAIN.","dur":3.0},{"t":"photo","act":4,"img":"PICT0037.jpg","anchor":false,"caption":"FIG. 31 \u00b7 A JUNIOR DELEGATE REVIEWS THE FOOTAGE.","dur":3.0},{"t":"photo","act":4,"img":"PICT0022.jpg","anchor":false,"caption":"FIG. 32 \u00b7 TWO OFFICIALS EXCHANGE INTELLIGENCE.","dur":3.0},{"t":"photo","act":4,"img":"PICT0023.jpg","anchor":false,"caption":"FIG. 33 \u00b7 THE STAIRWELL CAUCUS.","dur":3.0},{"t":"photo","act":4,"img":"PICT0015.jpg","anchor":false,"caption":"FIG. 34 \u00b7 A DELEGATE ARRIVES BY VERANDA.","dur":3.0},{"t":"photo","act":4,"img":"PICT0000.jpg","anchor":false,"caption":"FIG. 35 \u00b7 COMMITTEE MEMBER, FLORAL DIVISION.","dur":3.0},{"t":"photo","act":4,"img":"PICT0001.jpg","anchor":false,"caption":"FIG. 36 \u00b7 COMMITTEE MEMBER, THOROUGHLY AMUSED.","dur":3.0},{"t":"photo","act":4,"img":"PICT0002.jpg","anchor":false,"caption":"FIG. 37 \u00b7 COMMITTEE MEMBER, EXTREMELY PUNCTUAL.","dur":3.0},{"t":"photo","act":4,"img":"PICT0011.jpg","anchor":false,"caption":"FIG. 38 \u00b7 THE VERANDA SUBCOMMITTEE, IN SESSION.","dur":3.0},{"t":"photo","act":4,"img":"PICT0038.jpg","anchor":false,"caption":"FIG. 39 \u00b7 A SENIOR OFFICIAL, OFF DUTY.","dur":3.0},{"t":"photo","act":4,"img":"PICT0042.jpg","anchor":true,"scene":"SCENE XI","stitle":"The Commemorative Presentation","text":"To mark the success of the transit, a custom multi-colored artifact container was presented by the senior delegation. Its contents remain classified. Its wrapping paper did not survive.","nar":11,"dur":14.1},{"t":"photo","act":4,"img":"PICT0043.jpg","anchor":false,"caption":"FIG. 40 \u00b7 THE PRESENTATION, IN MOTION.","dur":3.0},{"t":"photo","act":4,"img":"PICT0044.jpg","anchor":false,"caption":"FIG. 41 \u00b7 A SECOND CONTAINER, HOT PINK, UNDISCLOSED.","dur":3.0},{"t":"photo","act":4,"img":"PICT0057.jpg","anchor":false,"caption":"FIG. 42 \u00b7 THE ARTIFACT, AS REMEMBERED.","dur":3.0},{"t":"photo","act":4,"img":"PICT0053.jpg","anchor":false,"caption":"FIG. 43 \u00b7 FIELD OPERATIONS RESUME, WITH COMMEMORATIVE STAMPS.","dur":3.0},{"t":"photo","act":4,"img":"PICT0054.jpg","anchor":false,"caption":"FIG. 44 \u00b7 THE STAMPS WERE NOT OPTIONAL.","dur":3.0},{"t":"photo","act":4,"img":"PICT0055.jpg","anchor":false,"caption":"FIG. 45 \u00b7 AN OFFICIAL PASSES THROUGH, DECORATED.","dur":3.0},{"t":"photo","act":4,"img":"PICT0056.jpg","anchor":false,"caption":"FIG. 46 \u00b7 THE GALLERY, AT SPEED.","dur":3.0},{"t":"photo","act":4,"img":"PICT0039.jpg","anchor":true,"scene":"SCENE XII","stitle":"The Quiet Conclusion","text":"At 4:45 PM, operations ceased. The fleet remained parked. The Director and the security detail reviewed the day in silence, as colleagues do. The house returned to its standard state of quiet symmetry.","nar":12,"dur":18.4},{"t":"end","dur":60,"nar":13}],"audio":{"0":"nar_00.mp3","1":"nar_01.mp3","2":"nar_02.mp3","3":"nar_03.mp3","4":"nar_04.mp3","5":"nar_05.mp3","6":"nar_06.mp3","7":"nar_07.mp3","8":"nar_08.mp3","9":"nar_09.mp3","10":"nar_10.mp3","11":"nar_11.mp3","12":"nar_12.mp3","13":"nar_13.mp3"},"acts":{"1":{"label":"ACT I","title":"The Discovery of the Luxury Transport","color":"#E9BBA4"},"2":{"label":"ACT II","title":"The Mobilization of the Supporting Fleet","color":"#D9A13B"},"3":{"label":"ACT III","title":"The Expedition Across the Living Room","color":"#46766F"},"4":{"label":"ACT IV","title":"The Gathering of the Syndicate","color":"#AE4A2E"}}}</script>
+<script>
+var CFG=JSON.parse(document.getElementById('cfg').textContent);
+var S=CFG.slides, cur=0, timer=null, paused=false, muted=false, started=false, suppress=0;
+var stage=document.getElementById('stage');
+var player=new Audio();
+player.preload='auto';
+function el(h){var d=document.createElement('div');d.innerHTML=h;return d.firstElementChild}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function build(){
+ S.forEach(function(s,i){
+  var n;
+  if(s.t==='cover'){
+   n=el('<div class="slide card cover-bg"><div class="frame"></div><div style="position:relative;padding:0 30px">'+
+    '<div class="kicker">The Rocket Boy Pictures Presents</div>'+
+    '<h1>The Chronicles of the Rug-Bound Rocket Boy</h1>'+
+    '<div class="orn">❀ ❀ ❀</div>'+
+    '<div class="sub">A Domestic Expedition in Four Acts</div>'+
+    '<div class="sub2">Photographed entirely on a toy camera · August 9, 2026</div>'+
+    '<button class="btn" id="begin">Commence the Screening</button></div></div>');
+  }else if(s.t==='act'){
+   var a=CFG.acts[String(s.act)];
+   n=el('<div class="slide card actcard" style="background:'+a.color+'"><div class="frame"></div>'+
+    '<div style="position:relative;padding:0 30px"><div class="actlabel">'+a.label+'</div>'+
+    '<div class="acttitle">'+esc(a.title)+'</div></div></div>');
+  }else if(s.t==='photo'){
+   var kb='kb'+((i%4)+1);
+   var inner='<img class="ph" alt="" decoding="async" data-src="'+s.img+'">';
+   if(s.anchor){
+    inner+='<div class="lower"><div class="scen">'+s.scene+'</div><div class="stt">'+esc(s.stitle)+
+     '</div><div class="txt">'+esc(s.text)+'</div></div>';
+   }else{
+    inner+='<div class="chip">'+esc(s.caption)+'</div>';
+   }
+   n=el('<div class="slide vig '+kb+'">'+inner+'</div>');
+  }else{
+   n=el('<div class="slide card endcard"><div class="frame"></div><div style="position:relative;padding:0 30px">'+
+    '<div class="fin">Fin</div><div class="cred">'+
+    '<b>The Chief Investigator</b><br>himself, aged two<br>'+
+    '<b>The Security Detail</b><br>herself, in a floral neckerchief<br>'+
+    '<b>The Vehicle</b><br>a roadster, one-eighth scale, briefly tasted<br>'+
+    '<b>Narrated By</b><br>a gentleman who takes toys very seriously</div>'+
+    '<button class="btn" id="again">Screen It Again</button></div></div>');
+  }
+  stage.appendChild(n);
+ });
+ document.getElementById('begin').addEventListener('click',function(e){e.stopPropagation();start()});
+}
+function ensureLoaded(from,to){
+ for(var i=Math.max(0,from);i<=Math.min(S.length-1,to);i++){
+  var im=stage.children[i]&&stage.children[i].querySelector('img.ph');
+  if(im&&!im.src)im.src=im.getAttribute('data-src');
+ }
+}
+function setHud(s,i){
+ var lbl='';
+ if(s.t==='photo'||s.t==='act'){var a=CFG.acts[String(s.act)];lbl=a.label+' · '+a.title}
+ if(s.t==='cover')lbl='Overture';
+ if(s.t==='end')lbl='Curtain';
+ document.getElementById('actlbl').textContent=lbl.toUpperCase();
+ document.getElementById('cnt').textContent=(i+1)+' / '+S.length;
+ document.getElementById('bar').style.width=(100*(i+1)/S.length)+'%';
+}
+function show(i){
+ if(i<0)i=0; if(i>=S.length)i=S.length-1;
+ var prev=stage.children[cur], next=stage.children[i], s=S[i];
+ if(prev&&prev!==next)prev.classList.remove('active');
+ cur=i;
+ ensureLoaded(i-1,i+5);
+ if(s.t==='photo'){
+  next.style.setProperty('--kb',(s.dur+2)+'s');
+  var im=next.querySelector('img.ph');
+  im.style.animation='none'; void im.offsetWidth; im.style.animation='';
+ }
+ next.classList.add('active');
+ next.classList.toggle('paused',paused);
+ setHud(s,i);
+ if(started){
+  if(s.nar!=null&&!muted){player.src=CFG.audio[String(s.nar)];player.play().catch(function(){})}
+  else{player.pause()}
+ }
+}
+function schedule(){
+ clearTimeout(timer);
+ if(paused)return;
+ var s=S[cur];
+ if(s.t==='end')return;
+ timer=setTimeout(function(){show(cur+1);schedule()},s.dur*1000);
+}
+function start(){
+ started=true;
+ document.getElementById('hud').classList.add('on');
+ ensureLoaded(0,6);
+ if(!muted){player.src=CFG.audio['0'];player.play().catch(function(){})}
+ schedule();
+ document.addEventListener('click',navClick);
+}
+function navClick(e){
+ if(Date.now()-suppress<500)return;
+ if(e.target.closest('.cbtn')||e.target.closest('.btn'))return;
+ var x=e.clientX/window.innerWidth;
+ if(x<0.25)go(-1); else if(x>0.75)go(1); else togglePause();
+}
+function go(d){clearTimeout(timer);show(cur+d);if(!paused)schedule()}
+function togglePause(){
+ paused=!paused;
+ document.getElementById('pz').textContent=paused?'Play':'Pause';
+ stage.children[cur].classList.toggle('paused',paused);
+ if(paused){player.pause();clearTimeout(timer)}
+ else{if(S[cur].nar!=null&&!muted)player.play().catch(function(){});schedule()}
+}
+function toggleMute(){
+ muted=!muted;
+ document.getElementById('mt').textContent=muted?'Sound On':'Sound Off';
+ if(muted)player.pause();
+ else if(S[cur].nar!=null&&started){player.play().catch(function(){})}
+}
+var tx=0,ty=0,tt=0;
+document.addEventListener('touchstart',function(e){
+ if(e.touches.length!==1)return;
+ tx=e.touches[0].clientX;ty=e.touches[0].clientY;tt=Date.now();
+},{passive:true});
+document.addEventListener('touchend',function(e){
+ if(!started)return;
+ var dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty, dt=Date.now()-tt;
+ if(dt<800&&Math.abs(dx)>60&&Math.abs(dx)>1.5*Math.abs(dy)){
+  suppress=Date.now();
+  if(dx<0)go(1); else go(-1);
+ }
+},{passive:true});
+document.addEventListener('keydown',function(e){
+ if(!started)return;
+ if(e.key==='ArrowRight')go(1);
+ else if(e.key==='ArrowLeft')go(-1);
+ else if(e.key===' '){e.preventDefault();togglePause()}
+ else if(e.key==='m'||e.key==='M')toggleMute();
+ else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}
+});
+build();
+ensureLoaded(0,3);
+show(0);
+document.addEventListener('click',function(e){
+ var ag=document.getElementById('again');
+ if(ag&&e.target===ag){e.stopPropagation();player.pause();paused=false;
+  document.getElementById('pz').textContent='Pause';show(0);schedule();
+  if(!muted){player.src=CFG.audio['0'];player.play().catch(function(){})}}
+});
+document.getElementById('pz').addEventListener('click',togglePause);
+document.getElementById('mt').addEventListener('click',toggleMute);
+var fsb=document.getElementById('fs');
+if(document.documentElement.requestFullscreen){
+ fsb.addEventListener('click',function(){
+  document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()});
+}else{fsb.style.display='none'}
+if('ontouchstart' in window){document.getElementById('hint').textContent='TAP SIDES TO NAVIGATE · CENTER TO PAUSE'}
+</script>
+</body>
+</html>
